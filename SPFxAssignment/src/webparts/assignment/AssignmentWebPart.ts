@@ -154,7 +154,7 @@ var URL = this.context.pageContext.web.absoluteUrl;
             }
             else{
               orderedList.append("<li data-target='#myCarousel' data-slide-to='" + element.ID + "'></li>");
-              corosalContainer.append("<div class='item'><div class='col-md-8' style='padding-left: 15%;'><img src='"+element.ImageUrl+"' style='width: 50%;'></div><div class='col-md-4'><p style='font-weight: bold;'>Subject : </p><p>"+element.Subject+"</p><button type='button' class='btn btn-info btn-sm callmodalJquery' data-toggle='modal' id='"+ element.ID  +"'>More</button></div></div>")
+              corosalContainer.append("<div class='item'><div class='col-md-8' style='padding-left: 15%;'><img src='"+element.ImageUrl+"' style='width: 100%;'></div><div class='col-md-4'><p style='font-weight: bold;'>Subject : </p><p>"+element.Subject+"</p><button type='button' class='btn btn-info btn-sm callmodalJquery' data-toggle='modal' id='"+ element.ID  +"'>More</button></div></div>")
             }
             
           });
@@ -165,15 +165,8 @@ var URL = this.context.pageContext.web.absoluteUrl;
           var message = response ? response.error.message.value : textStatus;
           alert("Call failed. Error: " + message);
       });
-      
-      
-      
-            
-      
-}
-      
-        }
-      
+      }  
+    }
     protected get dataVersion(): Version {
     return Version.parse('1.0');
   }
